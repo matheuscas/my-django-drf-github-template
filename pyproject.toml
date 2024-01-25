@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "my-django-drf-github-template"
-version = "0.1.0"
+version = "0.2.0"
 description = "A highly optioned Django + DRF Github template (always evolving)"
 authors = ["matheuscas <matheus.mcas@gmail.com>"]
 license = "MIT"
@@ -22,7 +22,7 @@ commitizen = "^3.13.0"
 
 [tool.commitizen]
 name = "cz_conventional_commits"
-version = "0.1.0"
+version = "0.2.0"
 tag_format = "v$version"
 version_files = ["pyproject.toml:version"]
 bump_message = "bump: version $current_version → $new_version"

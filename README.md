@@ -26,3 +26,5 @@ As of we have:
 ### Github actions
 
 [Testing](https://github.com/matheuscas/my-django-drf-github-template/blob/main/.github/workflows/testing.yaml)
+
+[Linting and formatting check](https://github.com/matheuscas/my-django-drf-github-template/blob/main/.github/workflows/linting_formating.yaml)

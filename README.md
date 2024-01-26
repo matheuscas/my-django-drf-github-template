@@ -6,10 +6,12 @@ Kidding. Not Kidding. Learning purposes also.
 
 As of we have:
 
-- Poetry as package manager
+### Package manager
 
-- Pre-commit hooks only on push (to keep the commits loop fast).
-Main hooks:
+[Poetry](https://python-poetry.org/)
+
+### [Pre-commit](https://pre-commit.com/) hooks
+
   - ruff
   - ruff-format
   - isort
@@ -17,7 +19,10 @@ Main hooks:
   - pyupgrade
   - commitizen (commit-msg)
 
-[Commitizen](https://commitizen-tools.github.io/commitizen/) besides linting commit messages is used for:
-- Bump versions
-- Generate changelogs
-- Update project's version
+### Commit message linter, semVer control, etc.
+
+[Commitizen](https://commitizen-tools.github.io/commitizen/)
+
+### Github actions
+
+[Testing](https://github.com/matheuscas/my-django-drf-github-template/blob/main/.github/workflows/testing.yaml)

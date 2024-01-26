@@ -21,5 +21,3 @@ Main hooks:
 - Bump versions
 - Generate changelogs
 - Update project's version
-
-Amongo others.

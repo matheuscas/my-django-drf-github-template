@@ -25,6 +25,16 @@ As of we have:
 
 ### Github actions
 
-[Testing](https://github.com/matheuscas/my-django-drf-github-template/blob/main/.github/workflows/testing.yaml)
+- [Testing](https://github.com/matheuscas/my-django-drf-github-template/blob/main/.github/workflows/testing.yaml)
 
-[Linting and formatting check](https://github.com/matheuscas/my-django-drf-github-template/blob/main/.github/workflows/linting_formating.yaml)
+- [Code linting and formatting check](https://github.com/matheuscas/my-django-drf-github-template/blob/main/.github/workflows/linting_formating.yaml)
+
+### OpenApi Documentation
+
+[drf-Spectacular](https://github.com/tfranzel/drf-spectacular)
+
+### Testing
+
+- [pytest](https://docs.pytest.org/en/7.4.x/)
+- [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/)
+- [mixer](https://github.com/klen/mixer)

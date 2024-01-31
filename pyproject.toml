@@ -23,6 +23,7 @@ commitizen = "^3.13.0"
 coverage = "^7.4.1"
 pytest-cov = "^4.1.0"
 mixer = "^7.2.2"
+django-migration-linter = "^5.0.0"
 
 [tool.commitizen]
 name = "cz_conventional_commits"

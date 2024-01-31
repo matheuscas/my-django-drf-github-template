@@ -26,8 +26,8 @@ As of we have:
 ### Github actions
 
 - [Testing](https://github.com/matheuscas/my-django-drf-github-template/blob/main/.github/workflows/testing.yaml)
-
 - [Code linting and formatting check](https://github.com/matheuscas/my-django-drf-github-template/blob/main/.github/workflows/linting_formating.yaml)
+- [Migrations linting](https://github.com/3YOURMIND/django-migration-linter?tab=readme-ov-file)
 
 ### OpenApi Documentation
 

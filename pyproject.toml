@@ -35,6 +35,21 @@ bump_message = "bump: version $current_version → $new_version"
 update_changelog_on_bump = true
 annotated_tag = true
 
+[tool.ruff]
+line-length = 89
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+docstring-code-format = true
+skip-magic-trailing-comma = true
+
+[tool.isort]
+profile = "django"
+combine_as_imports = true
+include_trailing_comma = true
+line_length = 89
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"

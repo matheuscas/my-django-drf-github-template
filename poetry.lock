@@ -356,6 +356,21 @@ files = [
 ]
 
 [[package]]
+name = "dj-database-url"
+version = "2.1.0"
+description = "Use Database URLs in your Django Application."
+optional = false
+python-versions = "*"
+files = [
+    {file = "dj-database-url-2.1.0.tar.gz", hash = "sha256:f2042cefe1086e539c9da39fad5ad7f61173bf79665e69bf7e4de55fa88b135f"},
+    {file = "dj_database_url-2.1.0-py3-none-any.whl", hash = "sha256:04bc34b248d4c21aaa13e4ab419ae6575ef5f10f3df735ce7da97722caa356e0"},
+]
+
+[package.dependencies]
+Django = ">=3.2"
+typing-extensions = ">=3.10.0.0"
+
+[[package]]
 name = "django"
 version = "5.0.1"
 description = "A high-level Python web framework that encourages rapid development and clean, pragmatic design."
@@ -446,6 +461,27 @@ uritemplate = ">=2.0.0"
 [package.extras]
 offline = ["drf-spectacular-sidecar"]
 sidecar = ["drf-spectacular-sidecar"]
+
+[[package]]
+name = "environs"
+version = "10.3.0"
+description = "simplified environment variable parsing"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "environs-10.3.0-py3-none-any.whl", hash = "sha256:feeaf28f17fd0499f9cd7c0fcf408c6d82c308e69e335eb92d09322fc9ed8138"},
+    {file = "environs-10.3.0.tar.gz", hash = "sha256:cc421ddb143fa30183568164755aa113a160e555cd19e97e664c478662032c24"},
+]
+
+[package.dependencies]
+marshmallow = ">=3.0.0"
+python-dotenv = "*"
+
+[package.extras]
+dev = ["environs[lint,tests]", "tox"]
+django = ["dj-database-url", "dj-email-url", "django-cache-url"]
+lint = ["flake8 (==7.0.0)", "flake8-bugbear (==23.11.28)", "mypy (==1.8.0)", "pre-commit (>=3.6,<4.0)"]
+tests = ["environs[django]", "pytest"]
 
 [[package]]
 name = "exceptiongroup"
@@ -682,6 +718,26 @@ files = [
 ]
 
 [[package]]
+name = "marshmallow"
+version = "3.20.2"
+description = "A lightweight library for converting complex datatypes to and from native Python datatypes."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "marshmallow-3.20.2-py3-none-any.whl", hash = "sha256:c21d4b98fee747c130e6bc8f45c4b3199ea66bc00c12ee1f639f0aeca034d5e9"},
+    {file = "marshmallow-3.20.2.tar.gz", hash = "sha256:4c1daff273513dc5eb24b219a8035559dc573c8f322558ef85f5438ddd1236dd"},
+]
+
+[package.dependencies]
+packaging = ">=17.0"
+
+[package.extras]
+dev = ["pre-commit (>=2.4,<4.0)", "pytest", "pytz", "simplejson", "tox"]
+docs = ["alabaster (==0.7.15)", "autodocsumm (==0.2.12)", "sphinx (==7.2.6)", "sphinx-issues (==3.0.1)", "sphinx-version-warning (==1.1.2)"]
+lint = ["pre-commit (>=2.4,<4.0)"]
+tests = ["pytest", "pytz", "simplejson"]
+
+[[package]]
 name = "mixer"
 version = "7.2.2"
 description = "Mixer -- Is a fixtures replacement. Supported Django ORM, SqlAlchemy ORM, Mongoengine ODM and custom python objects."
@@ -907,6 +963,20 @@ files = [
 
 [package.dependencies]
 six = ">=1.5"
+
+[[package]]
+name = "python-dotenv"
+version = "1.0.1"
+description = "Read key-value pairs from a .env file and set them as environment variables"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "python-dotenv-1.0.1.tar.gz", hash = "sha256:e324ee90a023d808f1959c46bcbc04446a10ced277783dc6ee09987c37ec10ca"},
+    {file = "python_dotenv-1.0.1-py3-none-any.whl", hash = "sha256:f7b63ef50f1b690dddf550d03497b66d609393b40b564ed0d674909a68ebf16a"},
+]
+
+[package.extras]
+cli = ["click (>=5.0)"]
 
 [[package]]
 name = "pytz"
@@ -1314,4 +1384,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "fdba718ed674e33373d620415597aaa10111b69823f12ee63bf9f82934360b55"
+content-hash = "d19d8ce21f0ad7b8adc9186ff785037fbecc85918567053a822faae0c14b87b0"

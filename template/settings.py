@@ -45,6 +45,10 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+
+    # apps
+    "users",
+
     # Third party
     "rest_framework",
     "drf_spectacular",
@@ -139,3 +143,5 @@ SPECTACULAR_SETTINGS = {
     "VERSION": "0.0.1",
     "SERVE_INCLUDE_SCHEMA": False,
 }
+
+AUTH_USER_MODEL = "users.CustomUser"

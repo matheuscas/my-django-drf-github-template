@@ -38,3 +38,8 @@ As of we have:
 - [pytest](https://docs.pytest.org/en/7.4.x/)
 - [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/)
 - [mixer](https://github.com/klen/mixer)
+
+### User base model
+
+[User model extended from AbstractUser](https://testdriven.io/blog/django-custom-user-model/) to use
+email instead of the username.

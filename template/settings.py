@@ -48,6 +48,7 @@ INSTALLED_APPS = [
 
     # apps
     "users",
+    "custom_auth",
 
     # Third party
     "rest_framework",
@@ -145,3 +146,13 @@ SPECTACULAR_SETTINGS = {
 }
 
 AUTH_USER_MODEL = "users.CustomUser"
+
+SESSION_COOKIE_HTTPONLY = True
+SESSION_COOKIE_SECURE = True
+SESSION_COOKIE_SAMESITE = 'Strict'
+
+CSRF_COOKIE_SAMESITE = 'Strict'
+CSRF_COOKIE_HTTPONLY = False
+
+# PROD ONLY
+# CSRF_COOKIE_SECURE = True
